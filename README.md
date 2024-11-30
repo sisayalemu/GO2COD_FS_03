@@ -37,25 +37,25 @@ To use the Chat App MERN, follow these steps:
       git clone https://github.com/sisayalemu/GO2COD_FS_03.git
 2. Navigate to project directory:
 ##
-      cd real-time-chat-app
+      cd GO2COD_FS_03
 3. Install the dependencies:
 ##
       npm install
 4. Navigate to Server directory of the project:
 ##
-      cd real-time-chat-app/server
+      cd GO2COD_FS_03/server
 5. Install the dependencies:
 ##
       npm install
 6. Navigate to Client directory of the project:
 ##
-      cd real-time-chat-app/client
+      cd GO2COD_FS_03/client
 7. Install the dependencies:
 ##
       npm install
 8. Navigate to Server Set up the environment variables Create a `.env` file: 
 ##
-      cd real-time-chat-app/server && vi .env
+      cd GO2COD_FS_03/erver && vi .env
 10. Start the development server:
 ##
       npm start
