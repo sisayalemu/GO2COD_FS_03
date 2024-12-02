@@ -35,7 +35,7 @@ jobs:
 
       - name: Build Frontend
         run: |
-          cd .
+          cd client
           npm run build
 
       - name: Start Backend Server
@@ -45,7 +45,7 @@ jobs:
       
       - name: Start Frontend Server
         run: |
-          cd .
+          cd client
           nohup serve -s build &
       
       - name: Cleanup and Finish
