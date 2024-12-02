@@ -46,7 +46,7 @@ jobs:
 
       - name: Start Frontend Server
         run: |
-          cd .
+          cd client
           nohup serve -s build &
       
       - name: Cleanup and Finish
