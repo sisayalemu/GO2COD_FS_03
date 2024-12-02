@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies for Frontend
         run: |
           cd client
+          npm install react-scripts --save
           npm install
       
       - name: Install dependencies for Backend
@@ -33,15 +34,20 @@ jobs:
           cd server
           npm install
 
-      - name: Start Frontend Server
+      - name: Build Frontend
         run: |
           cd client
-          nohup npm start &
+          npm run build
 
       - name: Start Backend Server
         run: |
           cd server
           nohup npm start &
+
+      - name: Start Frontend Server
+        run: |
+          cd .
+          nohup serve -s build &
       
       - name: Cleanup and Finish
         run: echo "Deployment completed successfully."
