@@ -33,14 +33,16 @@ jobs:
           cd client
           npm install
 
+      - name: Build Frontend
+        run: |
+          cd client
+          npm start
+
       - name: Deploy Backend
         run: |
           cd server
           npm start
 
-      - name: Build Frontend
-        run: |
-          cd client
-          npm start
+      
           
       
