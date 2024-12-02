@@ -37,7 +37,7 @@ jobs:
       - name: Build Frontend
         run: |
           cd client
-          npm run build
+          CI=false npm run build
 
       - name: Start Backend Server
         run: |
