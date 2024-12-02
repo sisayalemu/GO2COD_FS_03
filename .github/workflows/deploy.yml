@@ -33,20 +33,15 @@ jobs:
           cd server
           npm install
 
-      - name: Build Frontend
+      - name: Start Frontend Server
         run: |
           cd client
-          npm run build
+          nohup npm start &
 
       - name: Start Backend Server
         run: |
           cd server
           nohup npm start &
-      
-      - name: Start Frontend Server
-        run: |
-          cd client
-          nohup serve -s build &
       
       - name: Cleanup and Finish
         run: echo "Deployment completed successfully."
