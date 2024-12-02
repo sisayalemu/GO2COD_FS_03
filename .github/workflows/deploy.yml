@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies for Frontend
         run: |
-          cd .
+          cd client
           npm install
       
       - name: Install dependencies for Backend
