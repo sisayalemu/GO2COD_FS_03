@@ -44,13 +44,13 @@ jobs:
           cd server
           nohup npm start &
 
-      - name: Install HTTP-Server Globally
-        run: npm install -g http-server
-        
+      - name: Install Serve Globally
+        run: npm install -g serve
+
       - name: Start Frontend Server
         run: |
-          cd client/build
-          nohup http-server -p 3000 &
+          cd client
+          nohup serve -s build &
       
       - name: Cleanup and Finish
         run: echo "Deployment completed successfully."
