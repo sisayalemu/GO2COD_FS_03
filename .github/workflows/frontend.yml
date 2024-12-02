@@ -22,17 +22,31 @@ jobs:
         run: |
           cd .
           npm install
-      
+
       - name: Install dependencies for Frontend
         run: |
-          cd client
+          cd .
+          npm install
+      
+      - name: Install dependencies for Backend
+        run: |
+          cd server
           npm install
 
       - name: Build Frontend
         run: |
-          cd client
-          npm start
+          cd .
+          npm run build
 
+      - name: Start Backend Server
+        run: |
+          cd server
+          nohup npm start &
       
-          
+      - name: Start Frontend Server
+        run: |
+          cd .
+          nohup serve -s build &
       
+      - name: Cleanup and Finish
+        run: echo "Deployment completed successfully."
