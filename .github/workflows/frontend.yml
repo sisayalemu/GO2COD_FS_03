@@ -23,11 +23,6 @@ jobs:
           cd .
           npm install
       
-      - name: Install dependencies for Backend
-        run: |
-          cd server
-          npm install
-      
       - name: Install dependencies for Frontend
         run: |
           cd client
@@ -37,9 +32,6 @@ jobs:
         run: |
           cd client
           npm start
-          cd ../server
-          npm start
-        
 
       
           
