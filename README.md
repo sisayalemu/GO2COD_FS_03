@@ -27,6 +27,7 @@ The project is built using the MERN stack, which consists of the following techn
 - SCSS: A CSS preprocessor that provides additional features and enhancements to standard CSS, such as variables, nesting, and modular organization.
 
 - Docker: Docker is a software platform used to develop, ship, and run applications within lightweight containers, essentially packaging software into standardized units that include everything needed to run.
+- GitHub Action: GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
 
 ## Usage
 
